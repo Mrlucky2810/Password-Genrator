@@ -1,0 +1,128 @@
+/* Base Dark Mode Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #3f3939; /* Dark background */
+  color: #f0f0f0; /* Light text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.main-container {
+  background-color: #312c2c; /* Dark container background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.text-title h1 {
+  font-size: 2rem;
+  color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-field input {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 1rem;
+  color: #f0f0f0;
+  background-color: #555; /* Dark background for input fields */
+}
+
+.input-field button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.input-field button:hover {
+  background-color: #0056b3;
+}
+
+.range {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.range input[type="range"] {
+  width: 150px;
+  margin-right: 10px;
+  background-color: #777; /* Dark background for range input */
+  cursor: pointer;
+}
+
+.num-box,
+.char-box {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 20px;
+}
+
+.num-box input[type="checkbox"],
+.char-box input[type="checkbox"] {
+  margin-right: 10px;
+  background-color: #666; /* Dark background for checkboxes */
+}
+
+.num-box label,
+.char-box label {
+  font-size: 1rem;
+  color: #f0f0f0;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #007bff; /* Change color for checked state */
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #888; /* Add focus effect */
+}
+
+.copy-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.copy-button:hover {
+  background-color: #0056b3;
+}
+
+.copy-button.copied {
+  background-color: #28a745;
+  color: white;
+  transform: scale(1.1);
+}
